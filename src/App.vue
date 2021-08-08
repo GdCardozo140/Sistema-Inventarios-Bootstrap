@@ -1,19 +1,28 @@
 <template>
   <main id="app">
     <px-header />
-    <px-login />
+    <router-view
+      class="
+        container-fluid
+        d-flex
+        justify-content-center
+        vw-100
+        vh-100
+        bg-light
+        px-5
+        py-10
+      "
+    />
   </main>
 </template>
 
 <script>
 import PxHeader from '@/components/PxHeader';
-import PxLogin from '@/components/PxLogin';
 
 export default {
   name: 'App',
   components: {
     PxHeader,
-    PxLogin,
   },
 };
 </script>
